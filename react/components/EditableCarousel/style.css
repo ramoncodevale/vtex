@@ -1,0 +1,76 @@
+.carousel {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.card {
+  position: relative;
+  min-height: 100%;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+}
+
+/* Setas */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+
+.carousel :global(.splide__arrow) {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.carousel :global(.splide__arrow:hover) {
+  background: #c3d153;
+  transform: scale(1.05);
+}
+
+.carousel :global(.splide__arrow svg) {
+  fill: #c3d153;
+  transition: fill 0.3s ease;
+}
+
+.carousel :global(.splide__arrow:hover svg) {
+  fill: #fff;
+}
+
+/* Paginação */
+.carousel :global(.splide__pagination) {
+  bottom: -16px;
+}
+
+.carousel :global(.splide__pagination__page) {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 1px solid rgba(15, 62, 153, 0.4);
+  border-radius: 50%;
+  opacity: 1;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.carousel :global(.splide__pagination__page.is-active) {
+  width: 24px;
+  border-radius: 999px;
+  background: #c3d153;
+  border-color: #c3d153;
+}

@@ -1,0 +1,171 @@
+/* CONTAINER */
+:global(.lp-garantia-form) {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 56px 16px;
+}
+
+/* ALERTA */
+:global(.form-alert) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 1.4;
+  animation: fadeSlide 0.35s ease;
+}
+
+:global(.form-alert-icon) {
+  font-size: 18px;
+}
+
+:global(.form-alert.success) {
+  background: linear-gradient(135deg, #ecfdf5, #f0fdf9);
+  color: #065f46;
+  border-left: 4px solid #10b981;
+}
+
+:global(.form-alert.error) {
+  background: linear-gradient(135deg, #fef2f2, #fff1f1);
+  color: #7f1d1d;
+  border-left: 4px solid #ef4444;
+}
+
+:global(.form-alert.loading) {
+  background: linear-gradient(135deg, #eff6ff, #eef4ff);
+  color: #1e3a8a;
+  border-left: 4px solid #3b82f6;
+}
+
+/* CARD */
+:global(.form-card) {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 48px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.06),
+    0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* GRID */
+:global(.form-grid) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+:global(.form-group) {
+  display: flex;
+  flex-direction: column;
+}
+
+:global(.form-group.full) {
+  grid-column: span 2;
+}
+
+/* LABEL */
+:global(.form-group label) {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+/* INPUTS */
+:global(.form-group input),
+:global(.form-group textarea) {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  background-color: #fafafa;
+}
+
+:global(.form-group textarea) {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* HOVER */
+:global(.form-group input:hover),
+:global(.form-group textarea:hover) {
+  border-color: #cbd5e1;
+}
+
+/* FOCUS */
+:global(.form-group input:focus),
+:global(.form-group textarea:focus) {
+  outline: none;
+  border-color: #2563eb;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* FOOTER */
+:global(.form-footer) {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* BOTÃO */
+:global(.form-footer button) {
+  background: linear-gradient(135deg, #c3d153, #aabf3f);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 18px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(195, 209, 83, 0.35);
+}
+
+:global(.form-footer button:hover) {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(195, 209, 83, 0.45);
+}
+
+:global(.form-footer button:active) {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(195, 209, 83, 0.35);
+}
+
+:global(.form-footer button:disabled) {
+  opacity: 0.6;
+  cursor: progress;
+  box-shadow: none;
+}
+
+/* ANIMATION */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  :global(.form-card) {
+    padding: 32px 24px;
+  }
+
+  :global(.form-grid) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  :global(.form-group.full) {
+    grid-column: span 1;
+  }
+}

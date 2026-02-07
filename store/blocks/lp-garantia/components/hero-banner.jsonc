@@ -1,0 +1,59 @@
+{
+  "experimental__visibility-layout#lp-garantia-hero-banner": {
+    "title": "Visibilidade: Hero Banner",
+    "children": ["flex-layout.row#lp-garantia-hero-banner"]
+  },
+
+  "flex-layout.row#lp-garantia-hero-banner": {
+    "title": "Hero Banner",
+    "children": ["list-context.image-list#lp-garantia-hero-banner"],
+    "props": {
+      "blockClass": ["lp-garantia__hero-banner", "lp-garantia__section"],
+      "fullWidth": true
+    }
+  },
+
+  "list-context.image-list#lp-garantia-hero-banner": {
+    "title": "Lista de banners",
+    "children": ["slider-layout#lp-garantia-hero-banner"],
+    "props": {
+      "images": [
+        {
+          "image": "https://images.pexels.com/photos/8867472/pexels-photo-8867472.jpeg?_gl=1*172o3ws*_ga*MTQ3NjgwNTczOS4xNzU4OTA2Mzgy*_ga_8JE65Q40S6*czE3NzA0Nzc2MDkkbzkkZzEkdDE3NzA0Nzc2MjgkajQxJGwwJGgw",
+          "mobileImage": "https://images.pexels.com/photos/8867472/pexels-photo-8867472.jpeg?_gl=1*172o3ws*_ga*MTQ3NjgwNTczOS4xNzU4OTA2Mzgy*_ga_8JE65Q40S6*czE3NzA0Nzc2MDkkbzkkZzEkdDE3NzA0Nzc2MjgkajQxJGwwJGgw",
+          "description": "Banner 1"
+        },
+        {
+          "image": "https://images.pexels.com/photos/8867631/pexels-photo-8867631.jpeg?_gl=1*wevafz*_ga*MTQ3NjgwNTczOS4xNzU4OTA2Mzgy*_ga_8JE65Q40S6*czE3NzA0Nzc2MDkkbzkkZzEkdDE3NzA0Nzc2NjckajIkbDAkaDA.",
+          "mobileImage": "https://images.pexels.com/photos/8867631/pexels-photo-8867631.jpeg?_gl=1*wevafz*_ga*MTQ3NjgwNTczOS4xNzU4OTA2Mzgy*_ga_8JE65Q40S6*czE3NzA0Nzc2MDkkbzkkZzEkdDE3NzA0Nzc2NjckajIkbDAkaDA.",
+          "description": "Banner 2"
+        },
+        {
+          "image": "https://images.pexels.com/photos/8867275/pexels-photo-8867275.jpeg?_gl=1*1yjf95a*_ga*MTQ3NjgwNTczOS4xNzU4OTA2Mzgy*_ga_8JE65Q40S6*czE3NzA0Nzc2MDkkbzkkZzEkdDE3NzA0NzgwNjUkajM5JGwwJGgw",
+          "mobileImage": "https://images.pexels.com/photos/8867275/pexels-photo-8867275.jpeg?_gl=1*1yjf95a*_ga*MTQ3NjgwNTczOS4xNzU4OTA2Mzgy*_ga_8JE65Q40S6*czE3NzA0Nzc2MDkkbzkkZzEkdDE3NzA0NzgwNjUkajM5JGwwJGgw",
+          "description": "Banner 3"
+        }
+      ],
+      "blockClass": "lp-garantia__banner-list"
+    }
+  },
+
+  "slider-layout#lp-garantia-hero-banner": {
+    "title": "Slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "autoplay": {
+        "timeout": 5000,
+        "pauseOnHover": true
+      },
+      "blockClass": "lp-garantia__banner-slider"
+    }
+  }
+}
