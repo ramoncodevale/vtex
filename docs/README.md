@@ -16,10 +16,16 @@ Este projeto foi desenvolvido como parte de um desafio técnico utilizando a pla
 vtex login {account}
 vtex use {workspace}
 vtex link
-
+```
 
 ## Evidências visuais
-- Fluxo completo do formulário na loja:  
-  ![Página do formulário](./screenshots/formulário-enviado.png)
+
+## 📸 Imagem do formulário
+(./screenshots/formulário-enviado.png)
+<img src=".github/formulario-enviado.png" alt="imagem do formulário enviado">
 - Configuração do bloco no Site Editor do editable carousel:  
-  ![Site Editor do carousel](./screenshots/carousel-editable.png)
+
+## 📸 Imagem do carrousel no site editor
+<img src=".github/carrousel-editable.png" alt="imagem do carrousel no site editor">
+
+  
