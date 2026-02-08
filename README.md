@@ -22,9 +22,10 @@ vtex link
 
 ## 📸 Imagem do formulário
 <img src=".github/formulario-enviado.png" alt="imagem do formulário enviado">
-- Configuração do bloco no Site Editor do editable carousel:  
+- Formulário sendo enviado:  
 
 ## 📸 Imagem do carrousel no site editor
 <img src=".github/carrousel-editable.png" alt="imagem do carrousel no site editor">
+- Configuração do bloco no Site Editor do editable carousel:  
 
   
