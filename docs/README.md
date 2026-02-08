@@ -21,7 +21,6 @@ vtex link
 ## Evidências visuais
 
 ## 📸 Imagem do formulário
-(./screenshots/formulário-enviado.png)
 <img src=".github/formulario-enviado.png" alt="imagem do formulário enviado">
 - Configuração do bloco no Site Editor do editable carousel:  
 
